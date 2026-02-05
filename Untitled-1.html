@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SURAT KHAZANA: Premium women's clothing in Raichur. Shop sarees, kurtis, and more with quality fabrics and trendy designs.">
+    <title>SURAT KHAZANA - Women's Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- Promotional Banner -->
+    <div class="promo-banner">
+        <p><i class="fas fa-gift"></i> Free Shipping on Orders Over ₹1000 – Limited Time! Shop Now & Save. <i class="fas fa-gift"></i></p>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SURAT KHAZANA</div>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#collections"><i class="fas fa-th"></i> Collections</a></li>
+                <li><a href="#offers"><i class="fas fa-tags"></i> Offers</a></li>
+                <li><a href="#reviews"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="#visit"><i class="fas fa-map-marker-alt"></i> Visit Us</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></div>
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Hero Carousel -->
+    <section id="home" class="hero-carousel">
+        <div class="carousel-container">
+            <div class="slide active">
+                <img src="images/hero-kurti.jpg" alt="Featured Kurti">
+                <div class="slide-content">
+                    <h1><i class="fas fa-tshirt"></i> Trendy Kurtis Collection</h1>
+                    <p>Premium fabrics, affordable prices. Discover elegance in every stitch.</p>
+                    <a href="#collections" class="cta-button"><i class="fas fa-shopping-bag"></i> Shop Now</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/hero-saree.jpg" alt="Featured Saree">
+                <div class="slide-content">
+                    <h1><i class="fas fa-gem"></i> Elegant Sarees</h1>
+                    <p>Timeless elegance for every occasion. Handcrafted with love.</p>
+                    <a href="#collections" class="cta-button"><i class="fas fa-search"></i> Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-star"></i> Featured Products</h2>
+        <div class="featured-grid">
+            <div class="feature-item">
+                <i class="fas fa-tshirt icon"></i>
+                <h3>Kurtis</h3>
+                <p>Comfortable, stylish kurtis in premium cotton – perfect for daily wear.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-gem icon"></i>
+                <h3>Sarees</h3>
+                <p>Handwoven sarees with vibrant patterns – ideal for festivals and weddings.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-crown icon"></i>
+                <h3>Party Wear</h3>
+                <p>Glamorous outfits with sequins and embroidery – make every event special.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-home icon"></i>
+                <h3>Daily Wear</h3>
+                <p>Lightweight sets with modern prints – easy and affordable for everyday life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section with Filters -->
+    <section id="collections" class="section">
+        <div class="filters-sidebar">
+            <h3><i class="fas fa-filter"></i> Filters</h3>
+            <ul>
+                <li><a href="#" data-filter="all"><i class="fas fa-th"></i> All</a></li>
+                <li><a href="#" data-filter="sarees"><i class="fas fa-gem"></i> Sarees</a></li>
+                <li><a href="#" data-filter="kurtis"><i class="fas fa-tshirt"></i> Kurtis</a></li>
+                <li><a href="#" data-filter="party-wear"><i class="fas fa-crown"></i> Party Wear</a></li>
+                <li><a href="#" data-filter="daily-wear"><i class="fas fa-home"></i> Daily Wear</a></li>
+            </ul>
+            <select id="sort-price">
+                <option><i class="fas fa-sort"></i> Sort by Price</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+        <div class="products-grid">
+            <div class="product-card glassmorphism" data-category="kurtis">
+                <img src="images/kurti1.jpg" alt="Kurti Set 1">
+                <h3><i class="fas fa-tshirt"></i> Kurti Set 1</h3>
+                <p>Premium cotton kurti with intricate embroidery – comfortable and trendy for everyday elegance.</p>
+                <p class="price">₹500</p>
+                <a href="https://wa.me/918553284373?text=Hi, I'm interested in Kurti Set 1." class="cta-button"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+            <div class="product-card glassmorphism" data-category="kurtis">
+                <img src="images/kurti2.jpg" alt="Kurti Set 2">
+                <h3><i class="fas fa-tshirt"></i> Kurti Set 2</h3>
+                <p>Soft chiffon kurti with floral prints – lightweight and perfect for casual outings.</p>
+                <p class="price">₹600</p>
+                <a href="https://wa.me/918553284373?text=Hi, I'm interested in Kurti Set 2." class="cta-button"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+            <div class="product-card glassmorphism" data-category="sarees">
+                <img src="images/saree1.jpg" alt="Elegant Saree 1">
+                <h3><i class="fas fa-gem"></i> Elegant Saree 1</h3>
+                <p>Handwoven silk saree in vibrant colors – perfect for weddings and special occasions.</p>
+                <p class="price">₹800</p>
+                <a href="https://wa.me/918553284373?text=Hi, I'm interested in Elegant Saree 1." class="cta-button"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+            <div class="product-card glassmorphism" data-category="sarees">
+                <img src="images/saree2.jpg" alt="Elegant Saree 2">
+                <h3><i class="fas fa-gem"></i> Elegant Saree 2</h3>
+                <p>Cotton saree with traditional motifs – comfortable for daily wear and festivals.</p>
+                <p class="price">₹700</p>
+                <a href="https://wa.me/918553284373?text=Hi, I'm interested in Elegant Saree 2." class="cta-button"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+            <div class="product-card glassmorphism" data-category="party-wear">
+                <img src="images/party1.jpg" alt="Party Dress 1">
+                <h3><i class="fas fa-crown"></i> Party Dress 1</h3>
+                <p>Glamorous sequin dress with flowing fabric – designed for unforgettable nights out.</p>
+                <p class="price">₹1200</p>
+                <a href="https://wa.me/918553284373?text=Hi, I'm interested in Party Dress 1." class="cta-button"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+            <div class="product-card glassmorphism" data-category="party-wear">
+                <img src="images/party2.jpg" alt="Party Dress 2">
+                <h3><i class="fas fa-crown"></i> Party Dress 2</h3>
+                <p>Embroidered lehenga with mirror work – elegant for parties and celebrations.</p>
+                <p class="price">₹1500</p>
+                <a href="https://wa.me/918553284373?text=Hi, I'm interested in Party Dress 2." class="cta-button"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+            <div class="product-card glassmorphism" data-category="daily-wear">
+                <img src="images/daily1.jpg" alt="Daily Wear Set 1">
+                <h3><i class="fas fa-home"></i> Daily Wear Set 1</h3>
+                <p>Lightweight cotton set with modern prints – easy to wear and affordable for daily life.</p>
+                <p class="price">₹400</p>
+                <a href="https://wa.me/918553284373?text=Hi, I'm interested in Daily Wear Set 1." class="cta-button"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+            <div class="product-card glassmorphism" data-category="daily-wear">
+                <img src="images/daily2.jpg" alt="Daily Wear Set 2">
+                <h3><i class="fas fa-home"></i> Daily Wear Set 2</h3>
+                <p>Comfortable palazzo pants with kurti – breathable fabric for all-day comfort.</p>
+                <p class="price">₹450</p>
+                <a href="https://wa.me/918553284373?text=Hi, I'm interested in Daily Wear Set 2." class="cta-button"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-tags"></i> Exclusive Offers</h2>
+        <div class="offers-grid">
+            <div class="offer-card glassmorphism">
+                <img src="images/offer1.jpg" alt="50% Off Kurtis">
+                <h3><i class="fas fa-percent"></i> 50% Off Kurtis</h3>
+                <p>Limited time deal on premium kurtis – shop now and save big!</p>
+                <a href="#collections" class="cta-button"><i class="fas fa-arrow-right"></i> Shop Deals</a>
+            </div>
+            <div class="offer-card glassmorphism">
+                <img src="images/offer2.jpg" alt="Buy 1 Get 1 Saree">
+                <h3><i class="fas fa-gift"></i> Buy 1 Get 1 Saree</h3>
+                <p>Special offer on sarees – double the elegance for the price of one!</p>
+                <a href="#collections" class="cta-button"><i class="fas fa-arrow-right"></i> Shop Deals</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <h2><i class="fas fa-star"></i> Customer Reviews</h2>
+        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5 (2 reviews)</div>
+        <div class="reviews-grid">
+            <div class="review-card glassmorphism">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Love the quality and friendly staff – highly recommend!"</p>
+                <cite>- Customer A</cite>
+            </div>
+            <div class="review-card glassmorphism">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Affordable prices and trendy designs. Will shop again!"</p>
+                <cite>- Customer B</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us Section -->
+    <section id="visit" class="section">
+        <h2><i class="fas fa-map-marker-alt"></i> Visit Our Store</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-address-book"></i> Address: #, Tipu Sultan Main Road, beside Popular Medical Store, Raichur, Karnataka 584101</p>
+            <p><i class="fas fa-phone"></i> Phone: <a href="tel:08553284373">08553 284373</a></p>
+            <a href="https://maps.google.com/?q=683X+R6+Raichur,+Karnataka" class="cta-button"><i class="fas fa-directions"></i> Get Directions</a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.1234!2d77.1234!3d16.1234!2m3!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTYuMTIzNCw3Ny4xMjM0!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-banner">
+            <p><i class="fas fa-truck"></i> Fast Delivery | <i class="fas fa-credit-card"></i> Secure Payments | <i class="fas fa-undo"></i> Easy Returns</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://wa.me/918553284373" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/suratkazana" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/suratkazana" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 SURAT KHAZANA. Premium Fashion in Raichur.</p>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="tel:08553284373" class="floating-button call-button"><i class="fas fa-phone"></i></a>
+    <a href="https://wa.me/918553284373" class="floating-button whatsapp-button"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
